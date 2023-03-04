@@ -1,0 +1,1 @@
+dbfilename = 'gnotes.json'
