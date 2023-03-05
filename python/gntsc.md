@@ -10,9 +10,9 @@
   -d int            deletes a note by "int"
   -s int            shows a note by "int"
   -l                lists notes
-```
-  <!-- -o (a/d)          Option sort (a/d) (Acsending/Descending) -->
 
+  -o (a/d)          Option sort (a/d) (Acsending/Descending)
+```
 ___
 ### note structure
     index: int
