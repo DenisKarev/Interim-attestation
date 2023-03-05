@@ -1,3 +1,6 @@
+## gntsc.py - GNoTeSCommandline
+## Commandline Notes Processor ->> use in terminal
+## in python dir> gntsc.py
 ### command line options:
 ```
   -h                show this help message and exit
