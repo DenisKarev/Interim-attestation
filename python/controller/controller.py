@@ -5,7 +5,7 @@ from views.commandinput import commandinput
 from models.gview import gview
 from sys import exit, argv
 import logging
-
+from operator import itemgetter
 
 class controller():
     v: commandline
@@ -35,9 +35,11 @@ class controller():
             self.last = self.db.get_index()
 
         # sort option
-        # if self.inp.args_dict['o'] != None:
-        #     self.v.sort = self.inp.args_dict['o']
-        #     print('Sort option!')
+        if self.inp.args_dict['o'] != None:
+            if self.inp.args_dict['o'][0] == 'a':
+                self.v.sortoption = False
+            else:
+                self.v.sortoption = True
 
         if self.inp.args_dict['l'] != False:
             self.list_notes()
@@ -69,9 +71,19 @@ class controller():
         if self.last <= 0:
             self.v.err_print('Do not have any notes. gntsc -h for help )')
             logging.warning('List w 0 notes')
+            exit(0)
         else:
+            # sorted_list = []
+            if self.v.sortoption != None:
+                if self.v.sortoption:
+                    self.db.gnotes.sort(key=lambda x:x['cmdate'], reverse=False)
+                    # sorted_list = sorted(self.db.gnotes, key=lambda x:x['cmdate'], reverse=False)
+                else:
+                    self.db.gnotes.sort(key=lambda x:x['cmdate'], reverse=True)
+                    # sorted_list = sorted(self.db.gnotes, key=lambda x:x['cmdate'], reverse=True)
             for n in self.db.gnotes:
                 self.v.gnote_print('', n, 's')
+            logging.warning('Listed .sort %s', self.v.sortoption)
         exit(0)
 
     def edit_note(self):

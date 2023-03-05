@@ -1,0 +1,17 @@
+05-Mar-23 19:17:41 - WARNING - Added {'title': 'Note 1', 'index': 13, 'notetext': 'my first note. Is was hard %))', 'cmdate': 1678033061.752255}
+05-Mar-23 19:17:55 - WARNING - Added {'title': 'Note 2', 'index': 14, 'notetext': 'my second note. Is was hard %))', 'cmdate': 1678033075.549111}
+05-Mar-23 19:18:24 - WARNING - Added {'title': 'Note 3', 'index': 3, 'notetext': 'my third note. Is was hard %))', 'cmdate': 1678033104.113629}
+05-Mar-23 19:18:26 - WARNING - Added {'title': 'Note 3', 'index': 4, 'notetext': 'my third note. Is was hard %))', 'cmdate': 1678033106.336302}
+05-Mar-23 19:18:40 - WARNING - Deleted 
+05-Mar-23 20:10:30 - WARNING - List w 0 notes
+05-Mar-23 20:46:46 - WARNING - Listed .sort False
+05-Mar-23 20:47:06 - WARNING - Listed .sort None
+05-Mar-23 20:47:19 - WARNING - Listed .sort None
+05-Mar-23 20:47:49 - WARNING - Listed .sort None
+05-Mar-23 20:48:33 - WARNING - Listed .sort None
+05-Mar-23 20:49:51 - WARNING - Listed .sort None
+05-Mar-23 20:50:23 - WARNING - Listed .sort None
+05-Mar-23 20:50:54 - WARNING - Listed .sort False
+05-Mar-23 20:51:23 - WARNING - Listed .sort False
+05-Mar-23 20:51:52 - WARNING - Listed .sort None
+05-Mar-23 20:52:08 - WARNING - Deleted {'title': 'Note 13', 'index': 13, 'notetext': 'my sixth note. It defititely was hard %))', 'cmdate': 1677952196.434943}

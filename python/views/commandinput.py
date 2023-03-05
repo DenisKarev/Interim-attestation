@@ -34,7 +34,7 @@ class commandinput():
         self.parser.add_argument('-d', nargs=1, metavar='int', type=int, help='deletes a note by "int"')
         self.parser.add_argument('-s', nargs=1, metavar='int', type=int, help='shows a note by "int"')
         self.parser.add_argument('-l', action='store_true', help='lists notes')
-#        self.parser.add_argument('-o', nargs=1, metavar='(a/r)', choices=['a', 'd'], help='Option sort (a/r) (Acsending/Descending)')
+        self.parser.add_argument('-o', nargs=1, metavar='(a/d)', choices=['a', 'd'], help='sort option (a/d) (Acsending/Descending)')
 
     def get_args(self):
         self.args_dict = vars(self.parser.parse_args())
