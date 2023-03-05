@@ -37,8 +37,10 @@ class gnotes_db():
         pass
 
     def get_index(self) -> int:
-        return self.get_gnote(len(self.gnotes)-1)['index']
-        # return len(self.gnotes)
+        if len(self.gnotes) == 0:
+            return len(self.gnotes)
+        else:
+            return self.get_gnote(len(self.gnotes)-1)['index']
 
     def rebuild_indexes(self):
         self.index = 1

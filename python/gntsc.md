@@ -18,5 +18,5 @@ ___
     notetext: str
     cmdate: float (timestamp from datetime)
 ___
-### dbase? am i need it?
+### dbase class? am i need it?
 
