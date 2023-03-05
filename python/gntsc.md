@@ -10,7 +10,7 @@
   -s int            shows a note by "int"
   -l                lists notes
 
-  <!-- -o (a/r)          Option sort (a/r) (Acsending/Descending) -->
+  <!-- -o (a/d)          Option sort (a/d) (Acsending/Descending) -->
 ___
 ### note structure
     index: int

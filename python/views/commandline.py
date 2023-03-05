@@ -2,11 +2,11 @@ from models.gview import gview
 from datetime import datetime
 
 class commandline():
-    sortoption: str     # if implenemt sor option ))
+    sortoption: bool     # if implenemt sor option ))
     edit_usage: str
 
     def __init__(self) -> None:
-        self.sortoption = ''
+        self.sortoption = None
         self.edit_usage = '-e usage string'
         # self.empty = f'Nothing to {} -- base is empty'
 
@@ -22,14 +22,14 @@ class commandline():
         idx = n['index']
         tit = n['title']
         cmdate = datetime.fromtimestamp(n['cmdate']).strftime("%d/%m/%Y %H:%M:%S")
-        return f'{idx}\t{tit}\t{cmdate}'
+        return f'{idx}\t{tit}\t\t{cmdate}'
     
     def gnote_full(self, n: dict) -> str:
         idx = n['index']
         tit = n['title']
         text = n['notetext']
         cmdate = datetime.fromtimestamp(n['cmdate']).strftime("%d/%m/%Y %H:%M:%S")
-        return f'{idx}\t{tit}\t{text}\t{cmdate}'
+        return f'{idx}\t{tit}\t\t{text}\t{cmdate}'
 
     def gnote_print(self, message: str, gn: dict, t: str):
         if t in 'sf':
