@@ -1,6 +1,6 @@
-from views.commandline import commandline
+from gntsviews.commandline import commandline
+from gntsviews.commandinput import commandinput
 from dbase.gnotesdb import gnotes_db
-from views.commandinput import commandinput
 # from dbase.gnote import gnote
 from models.gview import gview
 from sys import exit, argv

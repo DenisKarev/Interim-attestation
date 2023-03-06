@@ -1,5 +1,5 @@
 from controller.controller import controller
-from views.commandline import commandline
+from gntsviews.commandline import commandline
 from dbase.gnotesdb import gnotes_db
 from controller.options import dbfilename
 
