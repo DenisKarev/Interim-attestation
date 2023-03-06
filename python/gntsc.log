@@ -16,3 +16,6 @@
 05-Mar-23 20:51:52 - WARNING - Listed .sort None
 05-Mar-23 20:52:08 - WARNING - Deleted {'title': 'Note 13', 'index': 13, 'notetext': 'my sixth note. It defititely was hard %))', 'cmdate': 1677952196.434943}
 05-Mar-23 21:01:30 - WARNING - Listed .sort True
+05-Mar-23 22:19:55 - WARNING - Listed .sort None
+06-Mar-23 12:40:24 - WARNING - Listed .sort True
+06-Mar-23 12:40:33 - WARNING - Listed .sort False
